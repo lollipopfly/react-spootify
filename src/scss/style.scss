@@ -5,4 +5,29 @@ $fa-font-path: "~font-awesome/fonts";
 
 body {
   background: #060606;
+  color: #88887e;
 }
+.nav-item {
+  vertical-align: middle;
+}
+.nav-link {
+  color: #88887e;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+}
+.nav {
+  padding: 15px 0;
+  border-bottom: 1px solid #282828;
+  margin-bottom: 50px;
+}
+.nav-link__logo {
+  color: #fff;
+}
+.nav-link__icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+

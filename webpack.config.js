@@ -26,6 +26,10 @@ module.exports = {
   devServer: {
     overlay: !inProduction,
     contentBase: path.join(__dirname, "dist"),
+    historyApiFallback: true, // for react-router-dom
+  },
+  watchOptions: {
+      poll: true
   },
 
   module: {
@@ -84,14 +88,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
-      favicon: './src/favicon.ico'
+      favicon: './src/favicon.png'
     }),
 
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    })
+    // new webpack.ProvidePlugin({
+    //   $: "jquery",
+    //   jQuery: "jquery",
+    //   "window.jQuery": "jquery"
+    // })
   ]
 };
 
