@@ -5,7 +5,18 @@ $fa-font-path: "~font-awesome/fonts";
 
 body {
   background: #060606;
-  color: #88887e;
+  color: #fff;
+  padding-bottom: 50px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.hidden {
+  display: none !important;
+}
+hr {
+  border-top: 1px solid #282828;
 }
 .nav-item {
   vertical-align: middle;
@@ -31,3 +42,44 @@ body {
   margin-right: 5px;
 }
 
+// HOME
+.home__top {
+  margin-bottom: 50px;
+}
+.list-group-item {
+  background: #222;
+  margin-bottom: 16px;
+  color: #b6b6b6;
+}
+.list-group-item:hover {
+  color: #888888;
+  background-color: #484848;
+}
+
+// Artist
+.card {
+  background-color: transparent !important;
+  margin-bottom: 20px;
+}
+.card__caption {
+  background-color: #222;
+}
+
+// Album
+.album__top {
+  margin-bottom: 50px;
+}
+.album__atist__name {
+  margin-bottom: 10px;
+}
+.album__name {
+  margin-bottom: 20px;
+}
+.album__bottom__link__item {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+}
+.album__bottom__link__item a:hover {
+  color: #2c75d8;
+}
